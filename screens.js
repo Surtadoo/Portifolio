@@ -9,6 +9,7 @@ import { setupMenu } from './menu.js';
 import { showSecondScreen } from './secondScreen.js';
 import { showProjectsScreen } from './projectsScreen.js';
 import { showAboutScreen } from './aboutScreen.js';
+import { showPartnershipScreen } from './partnershipScreen.js';
 
 function injectHeadResources() {
   const head = document.head;
@@ -39,6 +40,8 @@ export function initScreens() {
       showProjectsScreen();
     } else if (name === 'sobre') {
       showAboutScreen();
+    } else if (name === 'parcerias' || name === 'parceria' || name === 'parcerias ') {
+      showPartnershipScreen();
     }
   });
 }
